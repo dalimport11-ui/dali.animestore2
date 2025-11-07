@@ -1,0 +1,394 @@
+/* ============================
+   🎎 CATÁLOGO – DALI ANIME STORE
+============================ */
+.catalogo-container {
+    padding: 40px 8%;
+    background: var(--negro);
+    color: var(--blanco);
+    min-height: 100vh;
+    font-family: var(--fuente-principal);
+  }
+  
+  /* 🔸 Título */
+  .catalogo-title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: var(--amarillo);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+  }
+  
+  /* 🔹 Filtros */
+  .filtros {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .filtros select {
+    background: var(--negro);
+    color: var(--blanco);
+    border: 2px solid var(--rojo);
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--fuente-principal);
+  }
+  
+  .filtros select:hover {
+    background: var(--rojo);
+    color: var(--blanco);
+  }
+  
+  /* 🧱 GRID */
+  .productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+  }
+  
+/* ===========================
+ 🃏 PRODUCT CARD – ESTILO YU-GI-OH
+=========================== */
+
+/* 🃏 PRODUCT CARD – ESTILO YU-GI-OH */
+.product-card {
+  position: relative;
+  background: linear-gradient(180deg, #c48f55 0%, #a66a33 40%, #8b5a2b 100%);
+  border: 3px solid #d1a35d;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:
+    inset 0 0 8px rgba(0, 0, 0, 0.6),
+    0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 10px; /* 🔹 espacio para que se vea el borde */
+  box-sizing: border-box; /* 🔹 asegura que el padding no expanda el tamaño total */
+}
+
+.product-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow:
+    0 0 25px rgba(255, 215, 100, 0.6),
+    inset 0 0 10px rgba(255, 255, 200, 0.3);
+}
+
+/* 🖼️ Imagen */
+.img-wrapper {
+  position: relative;
+  background: linear-gradient(180deg, #c39b65 0%, #7e5424 100%);
+  border: 3px solid #d8b46a;
+  border-radius: 6px;
+  margin: 8px auto;
+  width: 90%;
+  aspect-ratio: 3 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* ✅ no recorta las figuras */
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.img-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+
+
+/* 🪙 Precio */
+.price {
+  margin-top: 6px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.price-tachado {
+  text-decoration: line-through;
+  color: #7b6a46;
+  margin-right: 6px;
+}
+
+.price-oferta {
+  color: #b1251a;
+}
+
+/* 🛒 Botón */
+.btn-agregar {
+  display: block;
+  background: linear-gradient(180deg, #532ad8 0%, #1c0b63 100%);
+  border: 2px solid #d8b46a;
+  color: #fdf6e3;
+  padding: 8px 14px;
+  margin: 10px auto 0 auto;
+  border-radius: 6px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  width: 80%;
+}
+
+.btn-agregar:hover {
+  background: linear-gradient(180deg, #ffdf6e 0%, #d2a100 100%);
+  color: #000;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.8);
+  transform: scale(1.05);
+}
+
+  
+  /* ===========================
+   🧭 SUBNAV DE CATEGORÍAS
+=========================== */
+.subnav-categorias {
+    background: var(--negro);
+    border-top: 2px solid var(--rojo);
+    border-bottom: 2px solid var(--rojo);
+    padding: 0.8rem 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+  
+  .subnav-categorias ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .subnav-categorias a {
+    color: var(--blanco);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+  }
+  
+  .subnav-categorias a:hover {
+    color: var(--amarillo);
+    transform: scale(1.1);
+  }
+  
+  .subnav-categorias a.active {
+    background: var(--rojo);
+    color: var(--blanco);
+    box-shadow: 0 0 10px rgba(229, 57, 53, 0.5);
+  }
+
+  /* ===========================
+   🌌 FONDOS DINÁMICOS POR CATEGORÍA
+=========================== */
+.catalogo-container {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: background 0.6s ease-in-out;
+  }
+  
+  /* 🎎 Figuras Anime */
+  .catalogo-container.figuras-anime {
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+                      url('/assets/img/fondodbz.png');
+  }
+  
+  /* 🎯 Funko Pop */
+  .catalogo-container.funko-pop {
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+                      url('/assets/img/bg-funko.jpg');
+  }
+  
+  /* 🎮 Gaming */
+  .catalogo-container.gaming {
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+                      url('/assets/img/bg-gaming.jpg');
+  }
+  
+  /* 🧩 Coleccionables */
+  .catalogo-container.coleccionables {
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+                      url('/assets/img/bg-coleccionables.jpg');
+  }
+
+    /* 🦊 Todas las categorías */
+    .catalogo-container.dragon-ball {
+        background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+                          url('/assets/img/fondodbz.png');
+      }
+  
+  /* 🦊 Todas las categorías */
+  .catalogo-container.todos {
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+                      url('/assets/img/bg-general.jpg');
+  }
+
+
+  /* ===========================
+ 🎨 RAREZAS – PRODUCT CARD COMPLETA SEGÚN RANGO
+=========================== */
+
+/* 1️⃣ Figura pequeña (Café) */
+.product-card.rareza-1 {
+  background: linear-gradient(180deg, #b66a47 0%, #c39279 40%, #b45b3b 100%);
+  border: 3px solid #797c89;
+  box-shadow:
+    inset 0 0 8px rgba(0, 0, 0, 0.6),
+    0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.product-card.rareza-1 .product-title {
+  background: linear-gradient(180deg, #9d6247 0%, #d6a993 40%, #a4583c 100%);
+  color: #f7edb4;
+  text-shadow: 1px 1px 2px #3b240c;
+  text-align: center;
+  padding: 6px 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-bottom: 2px solid rgba(255, 230, 180, 0.4);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.product-card.rareza-1 .product-info {
+  /* 📜 Caja inferior de descripción y precio (como texto de efecto) */
+  background: #e6d1a3;
+  border: 2px solid #b2894d;
+  border-radius: 6px;
+  margin: 8px 12px 12px 12px;
+  padding: 10px;
+  color: #3a2815;
+  font-size: 0.9rem;
+  text-align: left;
+  font-family: 'Georgia', serif;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+/* 2️⃣ Figura mediana (Verde) */
+.product-card.rareza-2 {
+  background: linear-gradient(180deg, #01947e 0%, #80b5ac 40%, #01947e 100%);
+  border: 3px solid #505362;
+  box-shadow:
+    inset 0 0 8px rgba(0, 43, 0, 0.6),
+    0 4px 10px rgba(0, 50, 0, 0.5);
+}
+.product-card.rareza-2 .product-title {
+  background: linear-gradient(180deg, #016f5f 0%, #80b5ac 40%, #015d4f 100%);
+  color: #feffff;
+  text-shadow: 1px 1px 2px #3b240c;
+  text-align: center;
+  padding: 6px 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-bottom: 2px solid rgba(255, 230, 180, 0.4);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.product-card.rareza-2 .product-info {
+  /* 📜 Caja inferior de descripción y precio (como texto de efecto) */
+  background: #fefffe;
+  border: 2px solid #d4a42d;
+  border-radius: 6px;
+  margin: 8px 12px 12px 12px;
+  padding: 10px;
+  color: #3a2815;
+  font-size: 0.9rem;
+  text-align: left;
+  font-family: 'Georgia', serif;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+/* 3️⃣ Figura grande (Azul) */
+.product-card.rareza-3 {
+  background: linear-gradient(180deg, #5b82bd 0%, #829ec7 40%, #4c72bb 100%);
+  border: 3px solid #505362;
+  box-shadow:
+    inset 0 0 8px rgba(0, 43, 0, 0.6),
+    0 4px 10px rgba(0, 50, 0, 0.5);
+}
+.product-card.rareza-3 .product-title {
+  background: linear-gradient(180deg, #496897 0%, #a2bde6 40%, #2f497a 100%);
+  color: #feffff;
+  text-shadow: 1px 1px 2px #3b240c;
+  text-align: center;
+  padding: 6px 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-bottom: 2px solid rgba(255, 230, 180, 0.4);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.product-card.rareza-3 .img-wrapper{
+  border: 3px solid #8b9399;
+
+}
+.product-card.rareza-3 .product-info {
+  /* 📜 Caja inferior de descripción y precio (como texto de efecto) */
+  background: #fefffe;
+  border: 2px solid #b07523;
+  border-radius: 6px;
+  margin: 8px 12px 12px 12px;
+  padding: 10px;
+  color: #3a2815;
+  font-size: 0.9rem;
+  text-align: left;
+  font-family: 'Georgia', serif;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+/* 4️⃣ Figura muy grande (Morada) */
+.product-card.rareza-4 {
+  background: linear-gradient(180deg, #8344af 0%, #9d6fbe 40%, #7b3cb3 100%);
+  border: 3px solid #505362;
+  box-shadow:
+    inset 0 0 8px rgba(0, 43, 0, 0.6),
+    0 4px 10px rgba(0, 50, 0, 0.5);
+}
+.product-card.rareza-4 .product-title {
+  background: linear-gradient(180deg, #724195 0%, #ae81ce 40%, #522579 100%);
+  color: #feffff;
+  text-shadow: 1px 1px 2px #3b240c;
+  text-align: center;
+  padding: 6px 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-bottom: 2px solid rgba(255, 230, 180, 0.4);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.product-card.rareza-4 .img-wrapper{
+  border: 3px solid #8b9399;
+
+}
+.product-card.rareza-4 .product-info {
+  /* 📜 Caja inferior de descripción y precio (como texto de efecto) */
+  background: #fefffe;
+  border: 2px solid #b07523;
+  border-radius: 6px;
+  margin: 8px 12px 12px 12px;
+  padding: 10px;
+  color: #3a2815;
+  font-size: 0.9rem;
+  text-align: left;
+  font-family: 'Georgia', serif;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
