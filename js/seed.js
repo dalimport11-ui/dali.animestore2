@@ -354,6 +354,23 @@ export const productosSeed = [
     null,
     1
   ),
+
+  new Producto(
+    23,
+    "Kid Buu",
+    "Dragon Ball",
+    "7-8cm",
+    8000,
+    null,
+    50000,
+    ["/assets/img/productos/Dragon Ball/023-kidbuu.png"],
+    "/assets/img/productos/Dragon Ball/023-kidbuu.gif",
+    "Edición especial Funko Pop Demon Slayer.",
+    "Disponible",
+    8,
+    null,
+    1
+  ),
   new Producto(
     100,
     "Metal Cooler",
@@ -368,7 +385,7 @@ export const productosSeed = [
     "Disponible",
     8,
     "/assets/img/fondos/fondodbz2.jpg",
-    1
+    2
   ),
   new Producto(
     101,
@@ -383,7 +400,8 @@ export const productosSeed = [
     "Edición especial Funko Pop Demon Slayer.",
     "Disponible",
     8,
-    "/assets/img/fondos/fondodbz2.jpg"
+    "/assets/img/fondos/fondodbz2.jpg",
+    2
   ),
   new Producto(
     102,
@@ -398,7 +416,8 @@ export const productosSeed = [
     "Edición especial Funko Pop Demon Slayer.",
     "Disponible",
     8,
-    "/assets/img/fondos/fondodbz2.jpg"
+    "/assets/img/fondos/fondodbz2.jpg",
+    2
   ),
   new Producto(
     103,
@@ -413,8 +432,8 @@ export const productosSeed = [
     "Edición especial Funko Pop Demon Slayer.",
     "Disponible",
     8,
-    "/assets/img/fondos/fondodbz2.jpg" // 👈 fondo específico para este producto
-        , 1
+    "/assets/img/fondos/fondodbz2.jpg",
+        2
   ),
   new Producto(
     104,
@@ -430,7 +449,7 @@ export const productosSeed = [
     "Disponible",
     8,
     "/assets/img/fondos/fondodbz2.jpg" // 👈 fondo específico para este producto
-        , 1
+        , 2
   ),
   new Producto(
     200,
@@ -446,7 +465,7 @@ export const productosSeed = [
     "Disponible",
     8,
     "/assets/img/fondos/fondodbz6jpg.jpg" // 👈 fondo específico para este producto
-        , 1
+        , 2
   ),
   new Producto(
     201,
@@ -462,7 +481,7 @@ export const productosSeed = [
     "Disponible",
     8,
     "/assets/img/fondos/fondodbz6jpg.jpg" // 👈 fondo específico para este producto
-        , 1
+        , 2
   ),
   new Producto(
     202,
@@ -478,7 +497,7 @@ export const productosSeed = [
     "Disponible",
     8,
     "/assets/img/fondos/fondodbz6jpg.jpg" // 👈 fondo específico para este producto
-        , 1
+        , 2
   ),
   new Producto(
     230,
@@ -510,8 +529,146 @@ export const productosSeed = [
     "Disponible",
     8,
     "/assets/img/fondos/fondodbz5.jpg" // 👈 fondo específico para este producto
+        , 2
+  ),
+  new Producto(
+    300,
+    "Mayin Buu Corriendo",
+    "Dragon Ball",
+    "7-8cm",
+    18000,
+    15000,
+    50000,
+    ["/assets/img/productos/Dragon Ball/300-MayinBuuCorriendo.png"],
+    "/assets/img/productos/Dragon Ball/300-MayinBuuCorriendo.gif",
+    "Edición especial Funko Pop Demon Slayer.",
+    "Disponible",
+    8,
+    "/assets/img/fondos/fondodbz5.jpg" // 👈 fondo específico para este producto
+        , 2
+  ),
+  new Producto(
+    301,
+    "Mayin Buu Dominadas",
+    "Dragon Ball",
+    "7-8cm",
+    18000,
+    15000,
+    50000,
+    ["/assets/img/productos/Dragon Ball/301-MayinBuuDominadas.png"],
+    "/assets/img/productos/Dragon Ball/301-MayinBuuDominadas.gif",
+    "Edición especial Funko Pop Demon Slayer.",
+    "Disponible",
+    8,
+    "/assets/img/fondos/fondodbz5.jpg" // 👈 fondo específico para este producto
+        , 2
+  ),
+  new Producto(
+    302,
+    "Mayin Buu Press Banca",
+    "Dragon Ball",
+    "7-8cm",
+    18000,
+    15000,
+    50000,
+    ["/assets/img/productos/Dragon Ball/302-MayinBuuPesas.png"],
+    "/assets/img/productos/Dragon Ball/302-MayinBuuPesas.gif",
+    "Edición especial Funko Pop Demon Slayer.",
+    "Disponible",
+    8,
+    "/assets/img/fondos/fondodbz5.jpg" // 👈 fondo específico para este producto
+        , 2
+  ),
+
+  new Producto(
+    303,
+    "Mayin Buu Equilibrio",
+    "Dragon Ball",
+    "7-8cm",
+    18000,
+    15000,
+    50000,
+    ["/assets/img/productos/Dragon Ball/303-MayinBuuEquilibrio.png"],
+    "/assets/img/productos/Dragon Ball/303-MayinBuuEquilibrio.gif",
+    "Edición especial Funko Pop Demon Slayer.",
+    "Disponible",
+    8,
+    "/assets/img/fondos/fondodbz5.jpg" // 👈 fondo específico para este producto
+        , 2
+  ),
+
+  new Producto(
+    310,
+    "Mayin Buu Gotenks",
+    "Dragon Ball",
+    "7-8cm",
+    18000,
+    15000,
+    50000,
+    ["/assets/img/productos/Dragon Ball/310-MiniMayinBuuGotenks.png"],
+    "/assets/img/productos/Dragon Ball/310-MiniMayinBuuGotenks.gif",
+    "Edición especial Funko Pop Demon Slayer.",
+    "Disponible",
+    8,
+    "/assets/img/fondos/fondodbz5.jpg" // 👈 fondo específico para este producto
+        , 1
+  ),
+  new Producto(
+    311,
+    "Mayin Buu",
+    "Dragon Ball",
+    "7-8cm",
+    18000,
+    15000,
+    50000,
+    ["/assets/img/productos/Dragon Ball/311-MiniMayinBuuCapa.png"],
+    "/assets/img/productos/Dragon Ball/311-MiniMayinBuuCapa.gif",
+    "Edición especial Funko Pop Demon Slayer.",
+    "Disponible",
+    8,
+    "/assets/img/fondos/fondodbz5.jpg" // 👈 fondo específico para este producto
+        , 1
+  ),
+  
+  
+
+  new Producto(
+    320,
+    "Gran Mayin Buu",
+    "Dragon Ball",
+    "7-8cm",
+    50000,
+    35000,
+    50000,
+    ["/assets/img/productos/Dragon Ball/320-granmayinbuu.png"],
+    "/assets/img/productos/Dragon Ball/320-granmayinbuu.gif",
+    "Edición especial Funko Pop Demon Slayer.",
+    "Disponible",
+    8,
+    "/assets/img/fondos/fondodbz5.jpg" // 👈 fondo específico para este producto
+        , 4
+  ),
+
+  new Producto(
+    321,
+    "Kid Buu",
+    "Dragon Ball",
+    "7-8cm",
+    50000,
+    30000,
+    50000,
+    ["/assets/img/productos/Dragon Ball/321-KidBuu.png"],
+    "/assets/img/productos/Dragon Ball/321-KidBuu.gif",
+    "Edición especial Funko Pop Demon Slayer.",
+    "Disponible",
+    8,
+    "/assets/img/fondos/fondodbz5.jpg" // 👈 fondo específico para este producto
         , 3
   ),
+  
+  
+
+  
   new Producto(
     1000,
     "Hinata Hyuga",
@@ -590,7 +747,7 @@ export const productosSeed = [
     "Disponible",
     8,
     "/assets/img/fondos/fondonaruto2.jpg" // 👈 fondo específico para este producto
-    , 2
+    , 3
   ),
   new Producto(
     1031,
@@ -606,7 +763,7 @@ export const productosSeed = [
     "Disponible",
     8,
     "/assets/img/fondos/fondonaruto2.jpg" // 👈 fondo específico para este producto
-    , 2
+    , 3
   ),
   new Producto(
     1032,
@@ -623,7 +780,7 @@ export const productosSeed = [
     8,
     "/assets/img/fondos/fondonaruto2.jpg" // 👈 fondo específico para este producto
     ,
-    2
+    3
   ),
   
   new Producto(
@@ -639,8 +796,8 @@ export const productosSeed = [
     "Edición especial Funko Pop Demon Slayer.",
     "Disponible",
     8,
-    "/assets/img/fondos/fondonaruto.jpg" // 👈 fondo específico para este producto
-    , 3
+    "/assets/img/fondos/fondonaruto1.jpg" // 👈 fondo específico para este producto
+    , 4
   ),
 
   new Producto(
@@ -656,7 +813,7 @@ export const productosSeed = [
     "Edición especial Funko Pop Demon Slayer.",
     "Disponible",
     8,
-    "/assets/img/fondos/fondodemonslayer2.jpg" // 👈 fondo específico para este producto
+    "/assets/img/fondos/fondodemonslayer.png" // 👈 fondo específico para este producto
   ),
 
   new Producto(
@@ -672,7 +829,7 @@ export const productosSeed = [
     "Edición especial Funko Pop Demon Slayer.",
     "Disponible",
     8,
-    "/assets/img/fondos/fondodemonslayer2.jpg" // 👈 fondo específico para este producto
+    "/assets/img/fondos/fondodemonslayer.png" // 👈 fondo específico para este producto
   ),
   new Producto(
     2001,
@@ -687,7 +844,7 @@ export const productosSeed = [
     "Edición especial Funko Pop Demon Slayer.",
     "Disponible",
     8,
-    "/assets/img/fondos/fondodemonslayer2.jpg" // 👈 fondo específico para este producto
+    "/assets/img/fondos/fondodemonslayer.png" // 👈 fondo específico para este producto
   ),
   new Producto(
     2002,
@@ -702,7 +859,7 @@ export const productosSeed = [
     "Edición especial Funko Pop Demon Slayer.",
     "Disponible",
     8,
-    "/assets/img/fondos/fondodemonslayer2.jpg" // 👈 fondo específico para este producto
+    "/assets/img/fondos/fondodemonslayer.png" // 👈 fondo específico para este producto
   ),
   new Producto(
     2003,
@@ -717,7 +874,7 @@ export const productosSeed = [
     "Edición especial Funko Pop Demon Slayer.",
     "Disponible",
     8,
-    "/assets/img/fondos/fondodemonslayer2.jpg" // 👈 fondo específico para este producto
+    "/assets/img/fondos/fondodemonslayer.png" // 👈 fondo específico para este producto
   ),
 
   new Producto(
@@ -733,25 +890,172 @@ export const productosSeed = [
     "Edición especial Funko Pop Demon Slayer.",
     "Disponible",
     8,
-    "/assets/img/fondos/fondodemonslayer2.jpg" // 👈 fondo específico para este producto
+    "/assets/img/fondos/fondodemonslayer.png" // 👈 fondo específico para este producto
   ),
 
   new Producto(
     2050,
+    "Zenitsu Agatsuma",
+    "Demon Slayer",
+    "7-8cm",
+    18000,
+    15000,
+    50000,
+    ["/assets/img/productos/DemonSlayer/2050-ZenitsuAgatsuma.png"],
+    "/assets/img/productos/DemonSlayer/2050-ZenitsuAgatsuma.gif",
+    "Edición especial Funko Pop Demon Slayer.",
+    "Disponible",
+    8,
+    "/assets/img/fondos/fondodemonslayer2.jpg" // 👈 fondo específico para este producto
+    ,
+    2
+  ),
+    new Producto(
+    2051,
     "Inosuke Hashibira",
     "Demon Slayer",
     "7-8cm",
     18000,
     15000,
     50000,
-    ["/assets/img/productos/DemonSlayer/2050-InosukeHashibira.png"],
-    "/assets/img/productos/DemonSlayer/2050-InosukeHashibira2.gif",
+    ["/assets/img/productos/DemonSlayer/2051-InosukeHashibira.png"],
+    "/assets/img/productos/DemonSlayer/2051-InosukeHashibira2.gif",
     "Edición especial Funko Pop Demon Slayer.",
     "Disponible",
     8,
     "/assets/img/fondos/fondodemonslayer2.jpg" // 👈 fondo específico para este producto
     ,
-    4
+    2
   ),
+  new Producto(
+    2052,
+    "Sabito",
+    "Demon Slayer",
+    "7-8cm",
+    18000,
+    15000,
+    50000,
+    ["/assets/img/productos/DemonSlayer/2052-Sabito.png"],
+    "/assets/img/productos/DemonSlayer/2052-Sabito.gif",
+    "Edición especial Funko Pop Demon Slayer.",
+    "Disponible",
+    8,
+    "/assets/img/fondos/fondodemonslayer2.jpg" // 👈 fondo específico para este producto
+    ,
+    2
+  ),
+
+  new Producto(
+    2053,
+    "Enmu",
+    "Demon Slayer",
+    "7-8cm",
+    18000,
+    15000,
+    50000,
+    ["/assets/img/productos/DemonSlayer/2053-Enmu.png"],
+    "/assets/img/productos/DemonSlayer/2053-Enmu.gif",
+    "Edición especial Funko Pop Demon Slayer.",
+    "Disponible",
+    8,
+    "/assets/img/fondos/fondodemonslayer2.jpg" // 👈 fondo específico para este producto
+    ,
+    2
+  ),
+
+  new Producto(
+    2100,
+    "Zenitsu Agatsuma",
+    "Demon Slayer",
+    "7-8cm",
+    18000,
+    15000,
+    50000,
+    ["/assets/img/productos/DemonSlayer/2100-ZenitsuAgatsuma.png"],
+    "/assets/img/productos/DemonSlayer/2100-ZenitsuAgatsuma3.gif",
+    "Edición especial Funko Pop Demon Slayer.",
+    "Disponible",
+    8,
+    "/assets/img/fondos/fondodemonslayer3.png" // 👈 fondo específico para este producto
+    ,
+    3
+  ),
+
+  
+
+  new Producto(
+    6000,
+    "Harry Potter",
+    "Harry Potter",
+    "7-8cm",
+    18000,
+    15000,
+    50000,
+    ["/assets/img/productos/HarryPotter/6000-HarryEscoba.png"],
+    "/assets/img/productos/HarryPotter/6000-HarryEscoba.gif",
+    "Edición especial Funko Pop Demon Slayer.",
+    "Disponible",
+    8,
+    "/assets/img/fondos/fondoharry1.png" // 👈 fondo específico para este producto
+    ,
+    2
+  ),
+
+  new Producto(
+    6001,
+    "Ron Weasley",
+    "Harry Potter",
+    "7-8cm",
+    18000,
+    15000,
+    50000,
+    ["/assets/img/productos/HarryPotter/6001-RonEscoba.png"],
+    "/assets/img/productos/HarryPotter/6001-RonEscoba.gif",
+    "Edición especial Funko Pop Demon Slayer.",
+    "Disponible",
+    8,
+    "/assets/img/fondos/fondoharry1.png" // 👈 fondo específico para este producto
+    ,
+    2
+  ),
+
+  new Producto(
+    6005,
+    "Ron Weasley",
+    "Harry Potter",
+    "7-8cm",
+    18000,
+    15000,
+    50000,
+    ["/assets/img/productos/HarryPotter/6005-RonSentado.png"],
+    "/assets/img/productos/HarryPotter/6005-RonSentado.gif",
+    "Edición especial Funko Pop Demon Slayer.",
+    "Disponible",
+    8,
+    "/assets/img/fondos/fondoharry1.png" // 👈 fondo específico para este producto
+    ,
+    2
+  ),
+
+  new Producto(
+    6006,
+    "Hermione Granger",
+    "Harry Potter",
+    "7-8cm",
+    18000,
+    15000,
+    50000,
+    ["/assets/img/productos/HarryPotter/6006-HermioneGranger.png"],
+    "/assets/img/productos/HarryPotter/6006-HermioneGranger.gif",
+    "Edición especial Funko Pop Demon Slayer.",
+    "Disponible",
+    8,
+    "/assets/img/fondos/fondoharry1.png" // 👈 fondo específico para este producto
+    ,
+    2
+  ),
+
+  
+
   
 ];
